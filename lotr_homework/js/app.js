@@ -317,10 +317,13 @@ const weWantsIt = () => {
 const thereAndBackAgain = () => {
 
   // 1. remove Gollum and the Ring from the DOM
+  $("#gollum").remove();
 
   // 2. remove all the baddies from the DOM
+  $(".baddy").remove();
 
   // 3. Move all the hobbits back to the shire
+  $(".hobbit").appendTo("#The-Shire");
 
 };
 
@@ -353,16 +356,16 @@ $(() => {
 
 });
 
-makeMiddleEarth();
-makeHobbits();
-keepItSecretKeepItSafe();
-makeBaddies();
-makeBuddies();
-leaveTheShire();
-beautifulStranger();
-forgeTheFellowShip();
-theBalrog();
-hornOfGondor();
-itsDangerousToGoAlone();
-weWantsIt();
+// makeMiddleEarth();
+// makeHobbits();
+// keepItSecretKeepItSafe();
+// makeBaddies();
+// makeBuddies();
+// leaveTheShire();
+// beautifulStranger();
+// forgeTheFellowShip();
+// theBalrog();
+// hornOfGondor();
+// itsDangerousToGoAlone();
+// weWantsIt();
 // thereAndBackAgain();
