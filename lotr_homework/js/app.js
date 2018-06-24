@@ -89,8 +89,8 @@ const makeHobbits = () => {
         $($hobbit).text(hobbits[i]);
         $($hobbit).attr("class", "hobbit");
         $($list).append($hobbit)
-        $("#The-Shire").append($list);
         };
+        $("#The-Shire").append($list);
   // 2. give each hobbit a class of "hobbit"
 
   // hint: create a 'ul' outside the loop upon which to append the 'li's
@@ -109,7 +109,8 @@ const keepItSecretKeepItSafe = () => {
 
   // 1. create an empty div with an id of 'the-ring'
   const $theRing = $("<div/>");
-  $(theRing).attr("id", "the-right");
+  $($theRing).attr("id", "the-ring");
+  $("li:first-child").append($theRing);
 
   // 2. add the ring as a child of Frodo
   
