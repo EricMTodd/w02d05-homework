@@ -254,10 +254,15 @@ const theBalrog = () => {
 const hornOfGondor = () => {
 
   // 1. create a pop-up alert that the horn of gondor has been blown
+  alert("The Horn of Gondor has been blown!");
 
   // 2. Boromir's been killed by the Uruk-hai! Put a linethrough on Boromir's name
+  const $boromir = $("#the-fellowship ul:last-child li:last-child");
+  $($boromir).css("text-decoration", "line-through");
 
   // 3. Tricky: Remove the Uruk-Hai from the Baddies on the page
+  const $urukHai = $("#Mordor li:last-child").prev();
+  $($urukHai).remove();
 
 };
 
