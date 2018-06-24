@@ -179,7 +179,6 @@ const leaveTheShire = () => {
   // 1. grab the hobbits (the ul in which they reside) and move them to Rivendell
   const $party = $("#The-Shire ul");
   $("#Rivendell").append($party);
-  console.log($party);
 
   // hint: the hobbits ul is a childNode of The-Shire-- there is way to get a list of childNodes
 
@@ -194,6 +193,8 @@ const leaveTheShire = () => {
 const beautifulStranger = () => {
 
   // 1. change the buddy 'Strider' textnode to "Aragorn"
+  const $strider = $("aside li:last-child").prev();
+  $($strider).text("Aragorn");
 
   // hint: You can get a list of elements by tag name, such as 'aside'
 
