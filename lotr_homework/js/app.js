@@ -296,10 +296,15 @@ const itsDangerousToGoAlone = () => {
 const weWantsIt = () => {
 
   // 1. Create a div with an id of 'gollum' and add it to Mordor
+  const $gollum = $("<div/>");
+  $($gollum).attr("id", "gollum");
+  $("#Mordor").append($gollum);
 
   // 2. Move the ring from Frodo and give it to Gollum
+  $("#the-ring").appendTo("#gollum");
 
   // 3. Move Gollum into Mount Doom
+  $("#gollum").appendTo("#mount-doom");
 
 };
 
@@ -347,3 +352,17 @@ $(() => {
   $('#13').on('click', thereAndBackAgain);
 
 });
+
+makeMiddleEarth();
+makeHobbits();
+keepItSecretKeepItSafe();
+makeBaddies();
+makeBuddies();
+leaveTheShire();
+beautifulStranger();
+forgeTheFellowShip();
+theBalrog();
+hornOfGondor();
+itsDangerousToGoAlone();
+weWantsIt();
+// thereAndBackAgain();
