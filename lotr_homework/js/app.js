@@ -84,8 +84,12 @@ const makeHobbits = () => {
 
   // 1. display an unordered list of the hobbits in the shire.
   // User note: it is always a good idea to establish a variable when using jQuery. This way it is simple to create elements and keep them organized. Once a variable has been established like the one directly below, though the element itself is not yet appended to the HTML document, it is still usable in the rest of the code that will be written.
+
+
         const $list = $("<ul/>");
         for(i = 0; i < hobbits.length; i++) {
+    // This can be written like this for further readability and efficiency.
+    // $list.append(`<li class="hobbit">${hobbits[i]}<li/>);
         const $hobbit = $("<li/>");
         $($hobbit).text(hobbits[i]);
   
