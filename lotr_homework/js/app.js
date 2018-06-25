@@ -239,6 +239,8 @@ const forgeTheFellowShip = () => {
 const theBalrog = () => {
 
   // 1. change the 'Gandalf' textNode to 'Gandalf the White'
+  // This can be achieved by using the following code:
+  // $(`li:contains("Gandlaf")`);
   const $gandalfTheWhite = $("#the-fellowship ul:last-child li:first-child");
   $($gandalfTheWhite).text("Gandalf the White");
 
